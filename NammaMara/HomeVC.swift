@@ -19,6 +19,7 @@ class HomeVC: UIPageViewController, UIPageViewControllerDataSource {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		dataSource = self
+		self.view.backgroundColor = UIColor(red: 79.0/255.0, green: 143.0/255.0, blue: 0.0/255.0, alpha: 1.0)
 		setViewControllers([orderedViewControllers.first!], direction: .forward, animated: true, completion: nil)
 	}
 
