@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ks1-Zk-ODo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="Q4Q-Y8-qcM">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ks1-Zk-ODo" customClass="HomeVC" customModule="NammaMara" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cf6-Rw-dUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676" y="203"/>
+        </scene>
+        <!--Home ContentVC-->
+        <scene sceneID="NuX-fO-mIJ">
+            <objects>
+                <viewController storyboardIdentifier="HomeContentVC" id="a23-QM-gP9" customClass="HomeContentVC" customModule="NammaMara" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="27A-IH-zPe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Z-HX-SsD">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py8-xx-HMs">
+                                <rect key="frame" x="0.0" y="588.5" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="centerX" secondItem="27A-IH-zPe" secondAttribute="centerX" id="4kV-XK-c0y"/>
+                            <constraint firstItem="Py8-xx-HMs" firstAttribute="height" secondItem="27A-IH-zPe" secondAttribute="height" multiplier="0.08" id="99f-u4-b6k"/>
+                            <constraint firstItem="Py8-xx-HMs" firstAttribute="width" secondItem="27A-IH-zPe" secondAttribute="width" id="Cvg-AX-xZF"/>
+                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="centerY" secondItem="27A-IH-zPe" secondAttribute="centerY" constant="10" id="LX0-on-6N5"/>
+                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="width" secondItem="27A-IH-zPe" secondAttribute="width" id="ZPe-bj-MTr"/>
+                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="height" secondItem="27A-IH-zPe" secondAttribute="height" id="oBh-YG-fn9"/>
+                            <constraint firstItem="Py8-xx-HMs" firstAttribute="centerX" secondItem="27A-IH-zPe" secondAttribute="centerX" id="oZ4-eD-BO2"/>
+                            <constraint firstItem="Py8-xx-HMs" firstAttribute="bottom" secondItem="27A-IH-zPe" secondAttribute="bottomMargin" constant="-25" id="xMR-MO-nxa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o3p-LL-bAg"/>
+                    </view>
+                    <connections>
+                        <outlet property="treeImageView" destination="Q4Z-HX-SsD" id="5Mk-k2-XM5"/>
+                        <outlet property="treeTitleView" destination="Py8-xx-HMs" id="F8T-X8-mCZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKu-JE-Pr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429.5999999999999" y="202.84857571214394"/>
+        </scene>
+    </scenes>
+</document>
