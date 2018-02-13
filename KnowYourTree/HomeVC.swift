@@ -1,6 +1,6 @@
 //
 //  HomeVC.swift
-//  NammaMara
+//  KnowYourTree
 //
 //  Created by Raghu, Reshma L on 2/11/18.
 //  Copyright © 2018 Raghu, Reshma L. All rights reserved.
