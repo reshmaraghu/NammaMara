@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ks1-Zk-ODo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KIX-aF-0Bq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,12 +17,35 @@
     </customFonts>
     <scenes>
         <!--HomeVC-->
-        <scene sceneID="Q4Q-Y8-qcM">
+        <scene sceneID="I9a-lH-hHL">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ks1-Zk-ODo" customClass="HomeVC" customModule="NammaMara" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cf6-Rw-dUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="KIX-aF-0Bq" customClass="HomeVC" customModule="NammaMara" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LyI-as-6BI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iom-W8-0m0">
+                                <rect key="frame" x="0.0" y="634.5" width="375" height="32.5"/>
+                                <color key="pageIndicatorTintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iom-W8-0m0" firstAttribute="height" secondItem="PBK-vd-YeF" secondAttribute="height" multiplier="0.05" id="3Qg-yk-KVq"/>
+                            <constraint firstItem="iom-W8-0m0" firstAttribute="width" secondItem="PBK-vd-YeF" secondAttribute="width" id="60T-55-0SH"/>
+                            <constraint firstItem="iom-W8-0m0" firstAttribute="centerX" secondItem="PBK-vd-YeF" secondAttribute="centerX" id="bsU-pO-0P8"/>
+                            <constraint firstItem="iom-W8-0m0" firstAttribute="bottom" secondItem="PBK-vd-YeF" secondAttribute="bottom" id="st0-8X-0JH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PBK-vd-YeF"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="iom-W8-0m0" id="rHu-hj-KY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktk-wX-HRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="203"/>
+            <point key="canvasLocation" x="673" y="200"/>
         </scene>
         <!--Home ContentVC-->
         <scene sceneID="NuX-fO-mIJ">
@@ -33,10 +56,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Z-HX-SsD">
-                                <rect key="frame" x="6" y="36" width="363.5" height="615"/>
+                                <rect key="frame" x="0.5" y="20" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Py8-xx-HMs">
-                                <rect key="frame" x="0.0" y="599" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="586.5" width="375" height="45.5"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,13 +70,13 @@
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Q4Z-HX-SsD" firstAttribute="centerX" secondItem="fft-FY-Vtk" secondAttribute="centerX" id="4kV-XK-c0y"/>
-                            <constraint firstItem="Py8-xx-HMs" firstAttribute="height" secondItem="fft-FY-Vtk" secondAttribute="height" multiplier="0.08" id="99f-u4-b6k"/>
+                            <constraint firstItem="Py8-xx-HMs" firstAttribute="height" secondItem="fft-FY-Vtk" secondAttribute="height" multiplier="0.07" id="99f-u4-b6k"/>
                             <constraint firstItem="Py8-xx-HMs" firstAttribute="width" secondItem="fft-FY-Vtk" secondAttribute="width" id="Cvg-AX-xZF"/>
                             <constraint firstItem="Q4Z-HX-SsD" firstAttribute="centerY" secondItem="fft-FY-Vtk" secondAttribute="centerY" id="LX0-on-6N5"/>
-                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="width" secondItem="fft-FY-Vtk" secondAttribute="width" multiplier="0.97" id="ZPe-bj-MTr"/>
-                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="height" secondItem="fft-FY-Vtk" secondAttribute="height" multiplier="0.95" id="oBh-YG-fn9"/>
+                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="width" secondItem="fft-FY-Vtk" secondAttribute="width" id="ZPe-bj-MTr"/>
+                            <constraint firstItem="Q4Z-HX-SsD" firstAttribute="height" secondItem="fft-FY-Vtk" secondAttribute="height" id="oBh-YG-fn9"/>
                             <constraint firstItem="Py8-xx-HMs" firstAttribute="centerX" secondItem="fft-FY-Vtk" secondAttribute="centerX" id="oZ4-eD-BO2"/>
-                            <constraint firstItem="Py8-xx-HMs" firstAttribute="bottom" secondItem="Q4Z-HX-SsD" secondAttribute="bottom" id="xMR-MO-nxa"/>
+                            <constraint firstItem="Py8-xx-HMs" firstAttribute="bottom" secondItem="Q4Z-HX-SsD" secondAttribute="bottom" constant="-35" id="xMR-MO-nxa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fft-FY-Vtk"/>
                     </view>

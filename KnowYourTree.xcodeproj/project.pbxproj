@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20E854B920306FA1004529FD /* NammaMara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NammaMara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E854B920306FA1004529FD /* KnowYourTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E854BC20306FA1004529FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20E854C120306FA1004529FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20E854C320306FA1004529FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		20E854BA20306FA1004529FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20E854B920306FA1004529FD /* NammaMara.app */,
+				20E854B920306FA1004529FD /* KnowYourTree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20E854B820306FA1004529FD /* NammaMara */ = {
+		20E854B820306FA1004529FD /* KnowYourTree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20E854CB20306FA1004529FD /* Build configuration list for PBXNativeTarget "NammaMara" */;
+			buildConfigurationList = 20E854CB20306FA1004529FD /* Build configuration list for PBXNativeTarget "KnowYourTree" */;
 			buildPhases = (
 				20E854B520306FA1004529FD /* Sources */,
 				20E854B620306FA1004529FD /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = NammaMara;
+			name = KnowYourTree;
 			productName = NammaMara;
-			productReference = 20E854B920306FA1004529FD /* NammaMara.app */;
+			productReference = 20E854B920306FA1004529FD /* KnowYourTree.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20E854B420306FA0004529FD /* Build configuration list for PBXProject "NammaMara" */;
+			buildConfigurationList = 20E854B420306FA0004529FD /* Build configuration list for PBXProject "KnowYourTree" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20E854B820306FA1004529FD /* NammaMara */,
+				20E854B820306FA1004529FD /* KnowYourTree */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +286,7 @@
 				DEVELOPMENT_TEAM = 97XB6A7238;
 				INFOPLIST_FILE = NammaMara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.NammaMara;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apps.-KnowYourTree";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,7 +301,7 @@
 				DEVELOPMENT_TEAM = 97XB6A7238;
 				INFOPLIST_FILE = NammaMara/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apps.NammaMara;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apps.-KnowYourTree";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20E854B420306FA0004529FD /* Build configuration list for PBXProject "NammaMara" */ = {
+		20E854B420306FA0004529FD /* Build configuration list for PBXProject "KnowYourTree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20E854C920306FA1004529FD /* Debug */,
@@ -320,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20E854CB20306FA1004529FD /* Build configuration list for PBXNativeTarget "NammaMara" */ = {
+		20E854CB20306FA1004529FD /* Build configuration list for PBXNativeTarget "KnowYourTree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20E854CC20306FA1004529FD /* Debug */,
